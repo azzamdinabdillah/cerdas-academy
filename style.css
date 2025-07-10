@@ -115,12 +115,14 @@ body {
 
 /* Mobile menu */
 .mobile-menu {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s;
 }
 
 .mobile-menu.active {
-  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Accordion */

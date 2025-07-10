@@ -1,3 +1,5 @@
+import { CountUp } from "countup.js";
+
 // Initialize AOS (Animate On Scroll)
 AOS.init({
     duration: 1000,
@@ -7,45 +9,77 @@ AOS.init({
 });
 
 // Typed.js for hero text animation
-const typed = new Typed('#typed-text', {
-    strings: [
-        'Transformasi Masa Depan Anak dengan Cerdas Academy',
-        'Bimbingan Belajar Terpercaya #1 di Indonesia',
-        'Guru Berpengalaman & Metode Pembelajaran Inovatif'
-    ],
-    typeSpeed: 50,
-    backSpeed: 30,
-    backDelay: 2000,
-    loop: true,
-    showCursor: true,
-    cursorChar: '|'
-});
+// const typed = new Typed('#typed-text', {
+//     strings: [
+//         'Transformasi Masa Depan Anak dengan Cerdas Academy',
+//         'Bimbingan Belajar Terpercaya #1 di Indonesia',
+//         'Guru Berpengalaman & Metode Pembelajaran Inovatif'
+//     ],
+//     typeSpeed: 50,
+//     backSpeed: 30,
+//     backDelay: 2000,
+//     loop: true,
+//     showCursor: true,
+//     cursorChar: '|'
+// });
 
-// Swiper for testimonials
-const testimonialSwiper = new Swiper('.testimonial-swiper', {
-    loop: true,
+// // Swiper for testimonials
+// const testimonialSwiper = new Swiper('.testimonial-swiper', {
+//     loop: true,
+//     autoplay: {
+//         delay: 5000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     breakpoints: {
+//         640: {
+//             slidesPerView: 1,
+//         },
+//         768: {
+//             slidesPerView: 2,
+//             spaceBetween: 20,
+//         },
+//         1024: {
+//             slidesPerView: 3,
+//             spaceBetween: 30,
+//         },
+//     },
+// });
+
+new Swiper('.testimonial-swiper', {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 32,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    navigation: {
+      nextEl: '.testimonial-swiper-next',
+      prevEl: '.testimonial-swiper-prev',
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
-});
+  });
+  // CountUp.js for stats
+  const students = new CountUp('students-count', 2345, {duration: 4,  enableScrollSpy: true});
+  const teachers = new CountUp('teachers-count', 67, {duration: 3,  enableScrollSpy: true});
+  const facilities = new CountUp('facilities-count', 18, {duration: 3,  enableScrollSpy: true});
+  students.start();
+  teachers.start();
+  facilities.start();
 
 // Swiper for teachers
 const teacherSwiper = new Swiper('.teacher-swiper', {
@@ -115,104 +149,114 @@ document.querySelectorAll('.counter').forEach(counter => {
 });
 
 // Particles.js background
-particlesJS('particles-js', {
-    particles: {
-        number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-        color: {
-            value: '#ffffff'
-        },
-        shape: {
-            type: 'circle',
-            stroke: {
-                width: 0,
-                color: '#000000'
-            }
-        },
-        opacity: {
-            value: 0.1,
-            random: false
-        },
-        size: {
-            value: 3,
-            random: true
-        },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#ffffff',
-            opacity: 0.1,
-            width: 1
-        },
-        move: {
-            enable: true,
-            speed: 2,
-            direction: 'none',
-            random: false,
-            straight: false,
-            out_mode: 'out',
-            bounce: false
-        }
-    },
-    interactivity: {
-        detect_on: 'canvas',
-        events: {
-            onhover: {
-                enable: true,
-                mode: 'grab'
-            },
-            onclick: {
-                enable: true,
-                mode: 'push'
-            },
-            resize: true
-        },
-        modes: {
-            grab: {
-                distance: 140,
-                line_linked: {
-                    opacity: 0.2
-                }
-            },
-            push: {
-                particles_nb: 4
-            }
-        }
-    },
-    retina_detect: true
-});
+// particlesJS('particles-js', {
+//     particles: {
+//         number: {
+//             value: 80,
+//             density: {
+//                 enable: true,
+//                 value_area: 800
+//             }
+//         },
+//         color: {
+//             value: '#ffffff'
+//         },
+//         shape: {
+//             type: 'circle',
+//             stroke: {
+//                 width: 0,
+//                 color: '#000000'
+//             }
+//         },
+//         opacity: {
+//             value: 0.1,
+//             random: false
+//         },
+//         size: {
+//             value: 3,
+//             random: true
+//         },
+//         line_linked: {
+//             enable: true,
+//             distance: 150,
+//             color: '#ffffff',
+//             opacity: 0.1,
+//             width: 1
+//         },
+//         move: {
+//             enable: true,
+//             speed: 2,
+//             direction: 'none',
+//             random: false,
+//             straight: false,
+//             out_mode: 'out',
+//             bounce: false
+//         }
+//     },
+//     interactivity: {
+//         detect_on: 'canvas',
+//         events: {
+//             onhover: {
+//                 enable: true,
+//                 mode: 'grab'
+//             },
+//             onclick: {
+//                 enable: true,
+//                 mode: 'push'
+//             },
+//             resize: true
+//         },
+//         modes: {
+//             grab: {
+//                 distance: 140,
+//                 line_linked: {
+//                     opacity: 0.2
+//                 }
+//             },
+//             push: {
+//                 particles_nb: 4
+//             }
+//         }
+//     },
+//     retina_detect: true
+// });
 
-// Sticky header functionality
-const header = document.getElementById('header');
-const headerHeight = header.offsetHeight;
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > headerHeight) {
-        header.classList.add('header-scrolled');
+// Navbar background/color on scroll
+window.addEventListener('scroll', function() {
+    
+    const header = document.getElementById('header');
+    const nav = header.querySelector('nav');
+    if (window.scrollY > 10) {
+      header.classList.remove('bg-transparent');
+      header.classList.add('bg-white', 'shadow', 'backdrop-blur-md');
+      nav.querySelectorAll('a').forEach(el => {
+        el.classList.remove('text-gray-900');
+        el.classList.add('text-emerald-600');
+      });
     } else {
-        header.classList.remove('header-scrolled');
+      header.classList.remove('bg-white', 'shadow');
+      header.classList.add('bg-transparent');
+      nav.querySelectorAll('a').forEach(el => {
+        el.classList.remove('text-emerald-600');
+        el.classList.add('text-gray-900');
+      });
     }
-});
+  });
 
-// Mobile menu functionality
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
-
-mobileMenuBtn.addEventListener('click', () => {
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenuBtn.addEventListener('click', () => {
+    console.log('asdasd');
+    
     mobileMenu.classList.toggle('active');
-});
-
-mobileMenuLinks.forEach(link => {
+  });
+  // Close mobile menu on link click
+  document.querySelectorAll('.mobile-menu-link').forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
     });
-});
+  });
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
