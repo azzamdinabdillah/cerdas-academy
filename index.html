@@ -213,153 +213,214 @@
       </div>
     </section>
 
-    <!-- Solution Overview Section -->
-    <section id="about" class="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-gradient-to-tr from-primary-200 via-emerald-100 to-indigo-100">
-      <!-- Animated floating shapes -->
-      <svg class="absolute top-0 left-0 w-full h-full z-0" style="pointer-events:none" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="200" r="120" fill="#8b5cf6" fill-opacity="0.10">
-          <animate attributeName="cy" values="200;250;200" dur="8s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="1240" cy="300" r="80" fill="#10b981" fill-opacity="0.10">
-          <animate attributeName="cy" values="300;350;300" dur="7s" repeatCount="indefinite"/>
-        </circle>
-        <rect x="900" y="700" width="180" height="60" rx="30" fill="#f59e0b" fill-opacity="0.08">
-          <animate attributeName="x" values="900;950;900" dur="10s" repeatCount="indefinite"/>
-        </rect>
-        <ellipse cx="400" cy="800" rx="90" ry="30" fill="#6366f1" fill-opacity="0.08">
-          <animate attributeName="cx" values="400;450;400" dur="9s" repeatCount="indefinite"/>
-        </ellipse>
-        <!-- Blended illustration -->
-        <g opacity="0.13">
-          <rect x="520" y="320" width="400" height="180" rx="40" fill="#fff"/>
-          <rect x="600" y="270" width="240" height="60" rx="18" fill="#10b981"/>
-          <circle cx="720" cy="470" r="36" fill="#f59e0b"/>
-          <rect x="680" y="440" width="80" height="18" rx="6" fill="#8b5cf6"/>
-          <text x="720" y="410" text-anchor="middle" fill="#8b5cf6" font-size="40" font-family="Inter, sans-serif" font-weight="bold">A+</text>
-        </g>
-      </svg>
-      <div class="container mx-auto px-4 max-w-3xl relative z-10 flex flex-col items-center text-center pt-32 pb-20">
-        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 animate-fadein">
-          Unlock <span class="bg-gradient-to-r from-primary-500 to-emerald-500 bg-clip-text text-transparent">Brilliance</span> in Every Child
-        </h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl animate-fadein delay-150">Personalized learning, inspiring mentors, and real results—empowering your child's journey to success.</p>
-        <a href="#programs" class="btn-primary text-lg px-10 py-4 rounded-xl shadow-lg animate-fadein delay-300">Get Started</a>
-        <a href="#testimonials" class="mt-4 text-emerald-600 font-semibold underline underline-offset-4 animate-fadein delay-500">See Success Stories</a>
+    <!-- About Us Section -->
+    <section id="about" class="relative py-20 bg-white overflow-hidden">
+      <!-- Subtle Background Elements -->
+      <div class="absolute inset-0 z-0">
+        
+        <!-- Subtle dot pattern -->
+        <div class="absolute inset-0 opacity-3" style="background-image: radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 0); background-size: 60px 60px;"></div>
       </div>
-    </section>
 
-    <!-- Program Offerings Section -->
-    <section id="programs" class="py-20 bg-emerald-50">
-      <div class="container mx-auto px-4">
-        <div class="text-start md:text-center mb-14 max-w-xl mx-auto">
-            <div class="flex md:justify-center mb-3">
-              <span class="inline-block w-12 h-1 bg-emerald-500 rounded-full"></span>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Choose the Best Program for Your Child's <span class="text-emerald-600">Future</span>
-            </h2>
-            <p class="text-lg text-gray-600">
-              Get high-quality learning experiences at affordable prices, with complete facilities for every education level.
-            </p>
+      <div class="relative z-10 max-w-7xl mx-auto px-4">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+            Tentang Kami
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Membentuk <span class="text-emerald-500 bg-clip-text">Generasi Cerdas</span> 
+            <br class="hidden md:block">dengan Metode Modern
+          </h2>
+          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Cerdas Academy adalah bimbingan belajar modern yang memadukan teknologi dan pendekatan personal,
+            membantu siswa berkembang dengan metode yang efektif dan menyenangkan.
+          </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <!-- Elementary Plan -->
-          <div class="bg-white cursor-pointer rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-emerald-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-emerald-300">
-            <div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-700">Elementary (SD)</h3>
-              <div class="mb-4">
-                <span class="text-4xl font-bold text-gray-900">Rp 179.000</span>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <!-- Left: Content -->
+          <div class="space-y-8">
+            <!-- Mission Statement -->
+            <div class="group relative bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 border border-emerald-100 hover:border-emerald-200 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              <!-- <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-full opacity-10 -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500"></div> -->
+              <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="relative">
+                    <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-emerald-400 rounded-full flex items-center justify-center">
+                      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">Misi Kami</h3>
+                    <div class="w-12 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mt-2"></div>
+                  </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                  Memberikan pendidikan berkualitas tinggi yang mempersiapkan siswa untuk menghadapi tantangan masa depan dengan percaya diri, 
+                  kreativitas, dan kemampuan berpikir kritis yang unggul.
+                </p>
               </div>
-              <p class="text-gray-500 mb-6">Build strong foundations in math, science, and language with engaging lessons for young learners.</p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Interactive learning modules
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Fun quizzes &amp; games
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Progress tracking for parents
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Supportive online community
-                </li>
-              </ul>
             </div>
-            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20Elementary%20(SD)%20program" target="_blank" class="btn-primary w-full flex items-center justify-center gap-2 transition duration-200 hover:bg-emerald-600 hover:text-white">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01s-.51.07-.77.34c-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
-              Contact us
-            </a>
+
+            <!-- Vision Statement -->
+            <div class="group relative bg-gradient-to-br from-primary-50 to-indigo-50 rounded-3xl p-8 border border-primary-100 hover:border-primary-200 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              <!-- <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-200 to-indigo-200 rounded-full opacity-10 -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500"></div> -->
+              <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="relative">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-indigo-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                      <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-6 h-6 bg-primary-400 rounded-full flex items-center justify-center">
+                      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900 group-hover:text-primary-700 transition-colors">Visi Kami</h3>
+                    <div class="w-12 h-1 bg-gradient-to-r from-primary-500 to-indigo-500 rounded-full mt-2"></div>
+                  </div>
+                </div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                  Menjadi lembaga pendidikan terpercaya yang menghasilkan generasi unggul dengan karakter kuat, 
+                  kompetensi global, dan siap berkontribusi positif bagi masyarakat.
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- Middle School Plan -->
-          <div class="bg-emerald-600 cursor-pointer rounded-2xl shadow-2xl p-8 flex flex-col justify-between border-4 border-emerald-600 text-white relative transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_40px_0_rgba(16,185,129,0.25)] hover:border-emerald-400">
-            <div>
-              <h3 class="text-lg font-semibold mb-2 text-white">Middle School (SMP)</h3>
-              <div class="mb-4">
-                <span class="text-4xl font-bold text-white">Rp 229.000</span>
+
+          <!-- Right: Interactive Stats & Features -->
+          <div class="space-y-8">
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+                <!-- <div class="absolute top-0 right-0 w-20 h-20 bg-emerald-100 rounded-full opacity-50 -translate-y-8 translate-x-8 group-hover:scale-110 transition-transform duration-500"></div> -->
+                <div class="relative z-10 text-center">
+                  <div class="text-4xl font-black text-emerald-600 mb-2 group-hover:scale-110 transition-transform duration-300">15+</div>
+                  <div class="text-sm text-gray-600 font-semibold">Tahun Pengalaman</div>
+                  <div class="w-8 h-1 bg-emerald-500 rounded-full mx-auto mt-3"></div>
+                </div>
               </div>
-              <p class="mb-6 text-emerald-100">Master core subjects and prepare for national exams with expert guidance and interactive resources.</p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Live online classes
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Exam preparation materials
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Homework help &amp; mentoring
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Progress reports for parents
-                </li>
-              </ul>
-            </div>
-            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20Middle%20School%20(SMP)%20program" target="_blank" class="w-full bg-white text-emerald-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-100 hover:text-emerald-700 transition flex items-center justify-center gap-2">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01-.19 0-.51.07-.77.34-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
-              Contact us
-            </a>
-          </div>
-          <!-- High School Plan -->
-          <div class="bg-white cursor-pointer rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-emerald-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-emerald-300">
-            <div>
-              <h3 class="text-lg font-semibold mb-2 text-gray-700">High School (SMA)</h3>
-              <div class="mb-4">
-                <span class="text-4xl font-bold text-gray-900">Rp 279.000</span>
+              <div class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+                <!-- <div class="absolute top-0 right-0 w-20 h-20 bg-teal-100 rounded-full opacity-50 -translate-y-8 translate-x-8 group-hover:scale-110 transition-transform duration-500"></div> -->
+                <div class="relative z-10 text-center">
+                  <div class="text-4xl font-black text-teal-600 mb-2 group-hover:scale-110 transition-transform duration-300">10K+</div>
+                  <div class="text-sm text-gray-600 font-semibold">Siswa Sukses</div>
+                  <div class="w-8 h-1 bg-teal-500 rounded-full mx-auto mt-3"></div>
+                </div>
               </div>
-              <p class="text-gray-500 mb-6">Achieve your academic goals and get ready for university with advanced materials and expert support.</p>
-              <ul class="space-y-3 mb-8">
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Advanced subject mastery
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  University entrance prep
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  1-on-1 mentoring sessions
-                </li>
-                <li class="flex items-center gap-2 text-emerald-600">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  Exclusive webinars &amp; workshops
-                </li>
-              </ul>
+              <div class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+                <!-- <div class="absolute top-0 right-0 w-20 h-20 bg-primary-100 rounded-full opacity-50 -translate-y-8 translate-x-8 group-hover:scale-110 transition-transform duration-500"></div> -->
+                <div class="relative z-10 text-center">
+                  <div class="text-4xl font-black text-primary-600 mb-2 group-hover:scale-110 transition-transform duration-300">99%</div>
+                  <div class="text-sm text-gray-600 font-semibold">Kepuasan</div>
+                  <div class="w-8 h-1 bg-primary-500 rounded-full mx-auto mt-3"></div>
+                </div>
+              </div>
+              <div class="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+                <!-- <div class="absolute top-0 right-0 w-20 h-20 bg-amber-100 rounded-full opacity-50 -translate-y-8 translate-x-8 group-hover:scale-110 transition-transform duration-500"></div> -->
+                <div class="relative z-10 text-center">
+                  <div class="text-4xl font-black text-amber-600 mb-2 group-hover:scale-110 transition-transform duration-300">50+</div>
+                  <div class="text-sm text-gray-600 font-semibold">Mentor Ahli</div>
+                  <div class="w-8 h-1 bg-amber-500 rounded-full mx-auto mt-3"></div>
+                </div>
+              </div>
             </div>
-            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20High%20School%20(SMA)%20program" target="_blank" class="btn-primary w-full flex items-center justify-center gap-2 transition duration-200 hover:bg-emerald-600 hover:text-white">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01s-.51.07-.77.34c-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
-              Contact us
-            </a>
+
+            <!-- Key Features -->
+            <div class="space-y-4">
+              <div class="group relative bg-gradient-to-r from-emerald-50 to-emerald-100/50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-emerald-200/50">
+                <div class="flex items-center gap-5">
+                  <div class="relative">
+                    <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-5 h-5 bg-emerald-400 rounded-full flex items-center justify-center">
+                      <svg class="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-gray-900 text-lg group-hover:text-emerald-700 transition-colors">Pembelajaran Personal</h4>
+                    <p class="text-gray-600 mt-1">Metode yang disesuaikan dengan gaya belajar setiap siswa</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group relative bg-gradient-to-r from-teal-50 to-teal-100/50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-teal-200/50">
+                <div class="flex items-center gap-5">
+                  <div class="relative">
+                    <div class="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-5 h-5 bg-teal-400 rounded-full flex items-center justify-center">
+                      <svg class="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-gray-900 text-lg group-hover:text-teal-700 transition-colors">Teknologi Modern</h4>
+                    <p class="text-gray-600 mt-1">Platform digital interaktif untuk pembelajaran yang efektif</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group relative bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-primary-200/50">
+                <div class="flex items-center gap-5">
+                  <div class="relative">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute -top-1 -right-1 w-5 h-5 bg-primary-400 rounded-full flex items-center justify-center">
+                      <svg class="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <h4 class="font-bold text-gray-900 text-lg group-hover:text-primary-700 transition-colors">Mentor Berpengalaman</h4>
+                    <p class="text-gray-600 mt-1">Tim pengajar profesional dengan track record sukses</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Call to Action -->
+        <!-- <div class="text-center">
+          <div class="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-primary-500 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+            <span class="font-semibold text-lg">Mulai Perjalanan Belajar</span>
+          </div>
+          <p class="mt-4 text-gray-600">Bergabunglah dengan ribuan siswa yang telah meraih kesuksesan bersama kami</p>
+        </div> -->
       </div>
     </section>
 
@@ -514,14 +575,19 @@
     <section id="why-choose" class="py-20 bg-white">
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="text-center mb-16 max-w-2xl mx-auto">
-          <button class="px-4 py-1 mx-auto rounded-full border border-gray-300 text-xs mb-4 flex items-center gap-2">
-            <svg class="w-4 h-4 text-emerald-500 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
             </svg>
-            WHY CHOOSE US
-          </button>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why <span class="text-emerald-500">Cerdas Academy</span> is the Smart Choice for Your Child</h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">Empowering young minds with innovative learning, expert guidance, and a nurturing environment for future success.</p>
+            Why Choose Us
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+            Why <span class="text-emerald-500">Cerdas Academy</span> is the Smart Choice for Your Child
+          </h2>
+          <p class="md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Empowering young minds with innovative learning, expert guidance, and a nurturing environment for future success.
+          </p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Card 1 -->
@@ -580,15 +646,16 @@
     <section id="methodology" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 max-w-xl mx-auto">
-              <button class="px-4 py-1 mx-auto rounded-full border border-gray-300 text-xs mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-emerald-500 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <!-- Lightbulb icon for "Learning Method" -->
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a7 7 0 017 7c0 2.386-1.053 4.09-2.5 5.197V17a2 2 0 01-2 2h-3a2 2 0 01-2-2v-2.803C6.053 13.09 5 11.386 5 9a7 7 0 017-7zm0 17v2m-4 0h8" />
+              <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.75A2.75 2.75 0 015.75 4h12.5A2.75 2.75 0 0121 6.75v10.5A2.75 2.75 0 0118.25 20H5.75A2.75 2.75 0 013 17.25V6.75z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10.5l2 2 4-4"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.75l9 6.75 9-6.75"/>
                 </svg>
-                LEARNING METHODOLOGY
-              </button>
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-emerald-500">Innovative Learning</span> Approach</h2>
-              <p class="text-xl text-gray-600 max-w-2xl mx-auto">We combine proven teaching strategies, personalized programs, and interactive sessions to help every child learn effectively and enjoyably.</p>
+                Learning Methodology
+              </div>
+              <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">Our <span class="text-emerald-500">Innovative Learning</span> Approach</h2>
+              <p class="md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">We combine proven teaching strategies, personalized programs, and interactive sessions to help every child learn effectively and enjoyably.</p>
             </div>
             <div class="max-w-2xl mx-auto">
                 <div class="relative flex flex-col items-start min-h-[600px]">
@@ -1098,168 +1165,119 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="section-title">Pilih Paket Sesuai Kebutuhan Anda</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Investasi terbaik untuk masa depan anak dengan harga yang terjangkau
-                </p>
-                <div class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full mt-4">
-                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span class="font-semibold">Diskon 50% untuk pendaftar bulan ini!</span>
-                </div>
+    <!-- Program Offerings Section -->
+    <section id="programs" class="py-20 bg-emerald-50">
+      <div class="container mx-auto px-4">
+        <div class="text-start md:text-center mb-14 max-w-xl mx-auto">
+            <div class="flex md:justify-center mb-3">
+              <span class="inline-block w-12 h-1 bg-emerald-500 rounded-full"></span>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Regular Package -->
-                <div class="card p-8 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Paket Reguler</h3>
-                        <p class="text-gray-600">Kelas kelompok dengan kualitas terbaik</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-4xl font-bold text-primary mb-2">
-                            <span class="line-through text-gray-400 text-2xl">Rp 600,000</span>
-                            <br>Rp 300.000
-                        </div>
-                        <p class="text-gray-500">per bulan</p>
-                    </div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Kelas kelompok (max 15 siswa)
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            3x pertemuan per minggu
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Materi pembelajaran lengkap
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Laporan progress bulanan
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Try out berkala
-                        </li>
-                    </ul>
-                    <a href="#contact" class="btn-primary w-full">Pilih Paket</a>
-                </div>
-                
-                <!-- Intensive Package -->
-                <div class="card p-8 text-center pricing-popular" data-aos="fade-up" data-aos-delay="200">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Paket Intensif</h3>
-                        <p class="text-gray-600">Kombinasi kelas kelompok + privat</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-4xl font-bold text-primary mb-2">
-                            <span class="line-through text-gray-400 text-2xl">Rp 900.000</span>
-                            <br>Rp 450.000
-                        </div>
-                        <p class="text-gray-500">per bulan</p>
-                    </div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Kelas kelompok + privat
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            5x pertemuan per minggu
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Konsultasi akademik
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Laporan progress mingguan
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Prioritas jadwal
-                        </li>
-                    </ul>
-                    <a href="#contact" class="btn-primary w-full">Pilih Paket</a>
-                </div>
-                
-                <!-- Premium Package -->
-                <div class="card p-8 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="mb-6">
-                        <h3 class="text-2xl font-bold mb-2">Paket Premium</h3>
-                        <p class="text-gray-600">Full privat dengan jadwal fleksibel</p>
-                    </div>
-                    <div class="mb-6">
-                        <div class="text-4xl font-bold text-primary mb-2">
-                            <span class="line-through text-gray-400 text-2xl">Rp 1.200.000</span>
-                            <br>Rp 600.000
-                        </div>
-                        <p class="text-gray-500">per bulan</p>
-                    </div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Les privat 1-on-1
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Jadwal fleksibel
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Bisa di rumah/kantor
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Kurikulum personal
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Laporan real-time
-                        </li>
-                    </ul>
-                    <a href="#contact" class="btn-primary w-full">Pilih Paket</a>
-                </div>
-            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Choose the Best Program for Your Child's <span class="text-emerald-600">Future</span>
+            </h2>
+            <p class="text-lg text-gray-600">
+              Get high-quality learning experiences at affordable prices, with complete facilities for every education level.
+            </p>
         </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Elementary Plan -->
+          <div class="bg-white cursor-pointer rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-emerald-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-emerald-300">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-700">Elementary (SD)</h3>
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-gray-900">Rp 179.000</span>
+              </div>
+              <p class="text-gray-500 mb-6">Build strong foundations in math, science, and language with engaging lessons for young learners.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Interactive learning modules
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Fun quizzes &amp; games
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Progress tracking for parents
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Supportive online community
+                </li>
+              </ul>
+            </div>
+            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20Elementary%20(SD)%20program" target="_blank" class="btn-primary w-full flex items-center justify-center gap-2 transition duration-200 hover:bg-emerald-600 hover:text-white">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01s-.51.07-.77.34c-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
+              Contact us
+            </a>
+          </div>
+          <!-- Middle School Plan -->
+          <div class="bg-emerald-600 cursor-pointer rounded-2xl shadow-2xl p-8 flex flex-col justify-between border-4 border-emerald-600 text-white relative transition-transform duration-300 hover:scale-105 hover:shadow-[0_10px_40px_0_rgba(16,185,129,0.25)] hover:border-emerald-400">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-white">Middle School (SMP)</h3>
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-white">Rp 229.000</span>
+              </div>
+              <p class="mb-6 text-emerald-100">Master core subjects and prepare for national exams with expert guidance and interactive resources.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Live online classes
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Exam preparation materials
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Homework help &amp; mentoring
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Progress reports for parents
+                </li>
+              </ul>
+            </div>
+            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20Middle%20School%20(SMP)%20program" target="_blank" class="w-full bg-white text-emerald-600 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-emerald-100 hover:text-emerald-700 transition flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01-.19 0-.51.07-.77.34-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
+              Contact us
+            </a>
+          </div>
+          <!-- High School Plan -->
+          <div class="bg-white cursor-pointer rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-emerald-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-emerald-300">
+            <div>
+              <h3 class="text-lg font-semibold mb-2 text-gray-700">High School (SMA)</h3>
+              <div class="mb-4">
+                <span class="text-4xl font-bold text-gray-900">Rp 279.000</span>
+              </div>
+              <p class="text-gray-500 mb-6">Achieve your academic goals and get ready for university with advanced materials and expert support.</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Advanced subject mastery
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  University entrance prep
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  1-on-1 mentoring sessions
+                </li>
+                <li class="flex items-center gap-2 text-emerald-600">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Exclusive webinars &amp; workshops
+                </li>
+              </ul>
+            </div>
+            <a href="https://wa.me/62895351448889?text=I'm%20interested%20in%20the%20High%20School%20(SMA)%20program" target="_blank" class="btn-primary w-full flex items-center justify-center gap-2 transition duration-200 hover:bg-emerald-600 hover:text-white">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32"><path d="M16 3C8.268 3 2 9.268 2 17c0 2.837.744 5.49 2.04 7.8L2.07 29.93a1 1 0 0 0 1.22 1.22l5.13-2.01A13.01 13.01 0 0 0 16 31c7.732 0 14-6.268 14-14S23.732 3 16 3zm0 24c-1.98 0-3.89-.39-5.65-1.13l-.4-.16-3.62 1.42 1.38-3.5-.2-.36A10.97 10.97 0 0 1 5 17c0-6.065 4.935-11 11-11s11 4.935 11 11-4.935 11-11 11zm5.36-7.2c-.29-.15-1.72-.85-1.98-.95-.26-.1-.45-.15-.63.13-.18.28-.72.92-.89 1.1-.17.18-.33.2-.61.08-.28-.13-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.57-1.95-.16-.28-.02-.44.12-.58.13-.13.29-.35.43-.52.14-.17.19-.3.29-.49.1-.19.06-.37-.02-.51-.07-.14-.62-1.5-.85-2.05-.23-.55-.46-.48-.62-.49-.16-.01-.36-.01-.55-.01s-.51.07-.77.34c-.26.27-1.01 1.01-1.01 2.47 0 1.46 1.04 2.87 1.19 3.07.15.2 2.06 3.14 5 4.27.7.29 1.25.46 1.67.59.7.22 1.34.19 1.85.12.57-.08 1.67-.68 1.91-1.34.24-.66.24-1.22.17-1.34-.07-.12-.25-.2-.54-.34z"/></svg>
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Registration Process Section -->
@@ -1457,197 +1475,86 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="section-title">Hubungi Kami Sekarang</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Siap membantu Anda memulai perjalanan pendidikan terbaik untuk anak
-                </p>
+    <section id="contact" class="relative min-h-screen flex items-center justify-center py-20 px-4 bg-[url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=compress&fit=crop&w=1200&q=80')] bg-cover bg-center bg-fixed">
+      <!-- Overlay with palette color -->
+      <div class="absolute inset-0 bg-emerald-900/70 pointer-events-none"></div>
+      <div class="relative z-10 flex flex-col items-center w-full">
+        <div class="max-w-xl w-full bg-white/95 rounded-2xl shadow-2xl border border-emerald-100 p-10 mx-auto">
+          <h3 class="text-sm font-bold text-emerald-500 mb-2 uppercase tracking-widest">Contact Us</h3>
+          <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-emerald-900">Ready to Help You!</h2>
+          <p class="text-emerald-700 mb-8">Contact us for a free consultation or any questions about our programs. The Cerdas Academy team will get in touch with you soon.</p>
+          <form id="contactForm" class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-emerald-700 mb-2">Full Name</label>
+              <input type="text" required placeholder="Enter your full name" class="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 bg-white/90 text-emerald-900 placeholder-emerald-400 shadow-sm" />
             </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Contact Info -->
-                <div data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mt-1">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-lg">Alamat Kantor</h4>
-                                <p class="text-gray-600">Jl. Pendidikan No. 123, Jakarta Selatan 12345</p>
-                                <p class="text-gray-600">Dekat dengan Stasiun MRT dan Halte Busway</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mt-1">
-                                <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-lg">Telepon & WhatsApp</h4>
-                                <p class="text-gray-600">Phone: (021) 123-4567</p>
-                                <p class="text-gray-600">WhatsApp: 0812-3456-7890</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mt-1">
-                                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-lg">Email & Website</h4>
-                                <p class="text-gray-600">info@cerdasacademy.com</p>
-                                <p class="text-gray-600">www.cerdasacademy.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mt-1">
-                                <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-lg">Jam Operasional</h4>
-                                <p class="text-gray-600">Senin - Jumat: 08:00 - 20:00</p>
-                                <p class="text-gray-600">Sabtu - Minggu: 08:00 - 17:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Media -->
-                    <div class="mt-8">
-                        <h4 class="font-semibold text-lg mb-4">Ikuti Kami</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-lg flex items-center justify-center text-white transition-colors">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-blue-800 hover:bg-blue-900 rounded-lg flex items-center justify-center text-white transition-colors">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-pink-600 hover:bg-pink-700 rounded-lg flex items-center justify-center text-white transition-colors">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-lg flex items-center justify-center text-white transition-colors">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contact Form -->
-                <div data-aos="fade-left">
-                    <div class="card p-8">
-                        <h3 class="text-2xl font-bold mb-6">Kirim Pesan</h3>
-                        <form id="contactForm" class="space-y-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Nomor Telepon</label>
-                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                            </div>
-                            
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Subjek</label>
-                                <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="">Pilih Subjek</option>
-                                    <option value="trial">Trial Gratis</option>
-                                    <option value="info">Informasi Program</option>
-                                    <option value="pricing">Konsultasi Harga</option>
-                                    <option value="other">Lainnya</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
-                                <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tulis pesan Anda di sini..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn-primary w-full text-lg py-4">
-                                Kirim Pesan
-                            </button>
-                        </form>
-                    </div>
-                </div>
+            <div>
+              <label class="block text-sm font-medium text-emerald-700 mb-2">Email</label>
+              <input type="email" required placeholder="Active email address" class="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 bg-white/90 text-emerald-900 placeholder-emerald-400 shadow-sm" />
             </div>
-            
-            <!-- Map -->
-            <div class="mt-12" data-aos="fade-up">
-                <div class="card p-4">
-                    <h3 class="text-xl font-bold mb-4">Lokasi Kami</h3>
-                    <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-                        <div class="text-center">
-                            <svg class="w-12 h-12 text-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <p class="text-gray-600">Google Maps akan dimuat di sini</p>
-                            <p class="text-gray-500 text-sm">Jl. Pendidikan No. 123, Jakarta Selatan</p>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <label class="block text-sm font-medium text-emerald-700 mb-2">WhatsApp Number</label>
+              <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 bg-white/90 text-emerald-900 placeholder-emerald-400 shadow-sm" />
             </div>
+            <div>
+              <label class="block text-sm font-medium text-emerald-700 mb-2">Select Program</label>
+              <select required class="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 bg-white/90 text-emerald-900 shadow-sm">
+                <option value="">Select Program</option>
+                <option value="sd">Elementary (Grades 1-6)</option>
+                <option value="smp">Middle School (Grades 7-9)</option>
+                <option value="sma">High School (Grades 10-12)</option>
+                <option value="lainnya">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-emerald-700 mb-2">Message</label>
+              <textarea rows="4" required maxlength="500" placeholder="Write your message or question here..." class="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400 bg-white/90 text-emerald-900 placeholder-emerald-400 shadow-sm"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full text-lg py-3 rounded-lg">Send Message</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-16 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #10b981 0%, transparent 50%), radial-gradient(circle at 75% 75%, #3b82f6 0%, transparent 50%);"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
                 <!-- Company Info -->
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-xl">C</span>
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-2xl">C</span>
                         </div>
-                        <span class="text-2xl font-bold">Cerdas Academy</span>
+                        <div>
+                            <span class="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Cerdas Academy</span>
+                            <p class="text-emerald-400 text-sm font-medium">Excellence in Education</p>
+                        </div>
                     </div>
-                    <p class="text-gray-300 mb-4">Transformasi masa depan anak melalui pendidikan berkualitas dengan metode pembelajaran inovatif dan tenaga pengajar berpengalaman.</p>
+                    <p class="text-gray-300 mb-6 leading-relaxed">Transforming your child's future through quality education with innovative learning methods and experienced educators.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
                             </svg>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-emerald-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                             </svg>
                         </a>
@@ -1656,64 +1563,115 @@
                 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">Tentang Kami</a></li>
-                        <li><a href="#programs" class="text-gray-300 hover:text-white transition-colors">Program</a></li>
-                        <li><a href="#testimonials" class="text-gray-300 hover:text-white transition-colors">Testimoni</a></li>
-                        <li><a href="#teachers" class="text-gray-300 hover:text-white transition-colors">Tim Pengajar</a></li>
-                        <li><a href="#pricing" class="text-gray-300 hover:text-white transition-colors">Harga</a></li>
-                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Kontak</a></li>
+                    <h4 class="text-lg font-semibold mb-6 text-white relative">
+                        <span class="relative z-10">Quick Links</span>
+                        <div class="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-400"></div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            About Us
+                        </a></li>
+                        <li><a href="#programs" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Programs
+                        </a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Testimonials
+                        </a></li>
+                        <li><a href="#teachers" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Teaching Team
+                        </a></li>
+                        <li><a href="#pricing" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Pricing
+                        </a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Contact
+                        </a></li>
                     </ul>
                 </div>
                 
                 <!-- Programs -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Program Kami</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">SD (Kelas 1-6)</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">SMP (Kelas 7-9)</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">SMA (Kelas 10-12)</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Les Privat</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Persiapan UTBK</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Olimpiade Sains</a></li>
+                    <h4 class="text-lg font-semibold mb-6 text-white relative">
+                        <span class="relative z-10">Our Programs</span>
+                        <div class="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-400"></div>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Elementary (Grades 1-6)
+                        </a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Middle School (Grades 7-9)
+                        </a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            High School (Grades 10-12)
+                        </a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Private Tutoring
+                        </a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            UTBK Preparation
+                        </a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
+                            <span class="w-1 h-1 bg-emerald-500 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                            Science Olympiad
+                        </a></li>
                     </ul>
                 </div>
                 
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Hubungi Kami</h4>
-                    <div class="space-y-2">
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <span class="text-gray-300">Jakarta Selatan 12345</span>
+                    <h4 class="text-lg font-semibold mb-6 text-white relative">
+                        <span class="relative z-10">Contact Us</span>
+                        <div class="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-emerald-400"></div>
+                    </h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 group">
+                            <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-emerald-600 transition-colors duration-300 mt-1">
+                                <svg class="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-300 group-hover:text-white transition-colors duration-300">South Jakarta 12345</span>
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                            </svg>
-                            <span class="text-gray-300">(021) 123-4567</span>
+                        <div class="flex items-start space-x-3 group">
+                            <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-emerald-600 transition-colors duration-300 mt-1">
+                                <svg class="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-300 group-hover:text-white transition-colors duration-300">(021) 123-4567</span>
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <span class="text-gray-300">info@cerdasacademy.com</span>
+                        <div class="flex items-start space-x-3 group">
+                            <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-emerald-600 transition-colors duration-300 mt-1">
+                                <svg class="w-4 h-4 text-gray-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-gray-300 group-hover:text-white transition-colors duration-300">info@cerdasacademy.com</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="border-t border-gray-700 mt-8 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
                     <p class="text-gray-400 text-sm">© 2025 Cerdas Academy. All rights reserved.</p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Kebijakan Privasi</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Syarat Layanan</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</a>
+                    <div class="flex space-x-8 mt-4 lg:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 text-sm transition-colors duration-300">Sitemap</a>
                     </div>
                 </div>
             </div>
