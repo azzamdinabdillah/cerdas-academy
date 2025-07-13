@@ -54,7 +54,7 @@ new Swiper('.testimonial-swiper', {
     slidesPerView: 1,
     spaceBetween: 32,
     autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     navigation: {

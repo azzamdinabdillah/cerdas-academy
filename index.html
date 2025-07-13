@@ -222,10 +222,10 @@
         <div class="absolute inset-0 opacity-3" style="background-image: radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 0); background-size: 60px 60px;"></div>
       </div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <div class="relative z-10 max-w-6xl mx-auto px-4 md:px-18 lg:px-0">
         <!-- Header Section -->
         <div class="text-center mb-16 max-w-2xl mx-auto">
-          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 w-fit rounded-full text-sm font-semibold mb-6">
             <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
@@ -244,9 +244,9 @@
         <!-- Main Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <!-- Left: Content -->
-          <div class="space-y-8">
+          <div class="space-y-8 grid grid-cols-1 md:grid-cols-2 lg:inline-block items-stretch gap-8">
             <!-- Mission Statement -->
-            <div class="group relative bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 border border-emerald-100 hover:border-emerald-200 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+            <div class="group relative bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 border border-emerald-100 hover:border-emerald-200 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 h-full">
               <!-- <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-200 to-teal-200 rounded-full opacity-10 -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500"></div> -->
               <div class="relative z-10">
                 <div class="flex items-center gap-4 mb-6">
@@ -425,19 +425,25 @@
     </section>
 
     <!-- Success Stories & Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-primary-900 text-primary-50 md:px-10">
+    <section id="testimonials" class="py-20 bg-emerald-600 text-white md:px-10">
       <div class="max-w-6xl mx-auto px-4">
-        <div class="mb-12 flex flex-col md:flex-row md:items-center md:justify-between" data-aos="fade-up">
+        <div class="mb-12 flex flex-col md:flex-row md:items-end md:justify-between" data-aos="fade-up">
           <div>
-            <h2 class="text-4xl font-bold mb-4 text-primary-50">What our clients say</h2>
-            <p class="text-lg text-primary-200 max-w-2xl">
+            <div class="inline-flex items-center gap-2 bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+              Success Stories
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">What our clients say</h2>
+            <p class="md:text-lg lg:text-xl text-emerald-100 max-w-2xl">
               Cerdas Academy is the super simple way to connect over video of apps, downloads, or long meeting links.
             </p>
           </div>
           <!-- Swiper Navigation Arrows -->
           <div class="flex gap-2 mt-6 md:mt-0">
-            <button class="testimonial-swiper-prev rounded-full p-2 bg-primary-800 text-primary-50"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-            <button class="testimonial-swiper-next rounded-full p-2 bg-primary-800 text-primary-50"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+            <button class="testimonial-swiper-prev transition hover:scale-110 cursor-pointer rounded-full p-2 bg-emerald-700 text-white"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <button class="testimonial-swiper-next transition hover:scale-110 cursor-pointer rounded-full p-2 bg-emerald-700 text-white"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
         <!-- Swiper Carousel for Testimonials -->
@@ -445,108 +451,108 @@
           <div class="swiper-wrapper items-stretch">
             <!-- Testimonial Slide 1 -->
             <div class="swiper-slide flex justify-center">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"The teachers are highly qualified and the learning methods are very adaptive. My child loves studying here!"</p>
+                  <p class="mb-6 text-emerald-100">"The teachers are highly qualified and the learning methods are very adaptive. My child loves studying here!"</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">John D.</div>
-                    <div class="text-sm text-primary-200">Parent, 2024</div>
+                    <div class="font-semibold text-white">John D.</div>
+                    <div class="text-sm text-emerald-200">Parent, 2024</div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Testimonial Slide 2 -->
             <div class="swiper-slide flex justify-center">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"Modern facilities and a flexible schedule make it easy for my child to learn and grow. Highly recommended!"</p>
+                  <p class="mb-6 text-emerald-100">"Modern facilities and a flexible schedule make it easy for my child to learn and grow. Highly recommended!"</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">Sarah W.</div>
-                    <div class="text-sm text-primary-200">Parent, 2024</div>
+                    <div class="font-semibold text-white">Sarah W.</div>
+                    <div class="text-sm text-emerald-200">Parent, 2024</div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Testimonial Slide 3 -->
             <div class="swiper-slide flex justify-center h-full">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"The money-back guarantee gave us peace of mind. The results speak for themselves!"</p>
+                  <p class="mb-6 text-emerald-100">"The money-back guarantee gave us peace of mind. The results speak for themselves!"</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">Michael B.</div>
-                    <div class="text-sm text-primary-200">Parent, 2024</div>
+                    <div class="font-semibold text-white">Michael B.</div>
+                    <div class="text-sm text-emerald-200">Parent, 2024</div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Testimonial Slide 4 -->
             <div class="swiper-slide flex justify-center">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"Cerdas Academy helped me improve my grades significantly. The tutors are patient and always ready to help!"</p>
+                  <p class="mb-6 text-emerald-100">"Cerdas Academy helped me improve my grades significantly. The tutors are patient and always ready to help!"</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">Andi S.</div>
-                    <div class="text-sm text-primary-200">Student, 2024</div>
+                    <div class="font-semibold text-white">Andi S.</div>
+                    <div class="text-sm text-emerald-200">Student, 2024</div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Testimonial Slide 5 -->
             <div class="swiper-slide flex justify-center">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"I appreciate the personalized approach. My daughter feels more confident and motivated to learn."</p>
+                  <p class="mb-6 text-emerald-100">"I appreciate the personalized approach. My daughter feels more confident and motivated to learn."</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">Lina M.</div>
-                    <div class="text-sm text-primary-200">Parent, 2024</div>
+                    <div class="font-semibold text-white">Lina M.</div>
+                    <div class="text-sm text-emerald-200">Parent, 2024</div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- Testimonial Slide 6 -->
             <div class="swiper-slide flex justify-center">
-              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-primary-800">
+              <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-emerald-700">
                 <div>
                   <div class="flex mb-2">
-                    <span class="text-xl text-amber-500">★★★★★</span>
+                    <span class="text-xl text-amber-400">★★★★★</span>
                   </div>
-                  <p class="mb-6 text-primary-100">"The online classes are interactive and fun. I can ask questions anytime and get clear explanations."</p>
+                  <p class="mb-6 text-emerald-100">"The online classes are interactive and fun. I can ask questions anytime and get clear explanations."</p>
                 </div>
                 <div class="flex items-center mt-auto">
                   <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
                   <div>
-                    <div class="font-semibold text-emerald-400">Rizky P.</div>
-                    <div class="text-sm text-primary-200">Student, 2024</div>
+                    <div class="font-semibold text-white">Rizky P.</div>
+                    <div class="text-sm text-emerald-200">Student, 2024</div>
                   </div>
                 </div>
               </div>
@@ -556,16 +562,16 @@
         <!-- Animated Counter Stats -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <div class="text-4xl font-bold text-emerald-400" id="students-count">0</div>
-            <div class="mt-2 text-primary-100">Students</div>
+            <div class="text-4xl font-bold text-white" id="students-count">0</div>
+            <div class="mt-2 text-emerald-100">Students</div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-emerald-400" id="teachers-count">0</div>
-            <div class="mt-2 text-primary-100">Certified Teachers</div>
+            <div class="text-4xl font-bold text-white" id="teachers-count">0</div>
+            <div class="mt-2 text-emerald-100">Certified Teachers</div>
           </div>
           <div>
-            <div class="text-4xl font-bold text-emerald-400" id="facilities-count">0</div>
-            <div class="mt-2 text-primary-100">Modern Facilities</div>
+            <div class="text-4xl font-bold text-white" id="facilities-count">0</div>
+            <div class="mt-2 text-emerald-100">Modern Facilities</div>
           </div>
         </div>
       </div>
@@ -573,9 +579,9 @@
 
     <!-- Why Choose Us Section -->
     <section id="why-choose" class="py-20 bg-white">
-      <div class="container mx-auto px-4 max-w-6xl">
+      <div class="container mx-auto px-4 md:px-18 lg:px-0 max-w-6xl">
         <div class="text-center mb-16 max-w-2xl mx-auto">
-          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex w-fit items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" stroke-width="2"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/>
@@ -646,7 +652,7 @@
     <section id="methodology" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 max-w-2xl mx-auto">
-              <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 w-fit rounded-full text-sm font-semibold mb-6">
                 <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.75A2.75 2.75 0 015.75 4h12.5A2.75 2.75 0 0121 6.75v10.5A2.75 2.75 0 0118.25 20H5.75A2.75 2.75 0 013 17.25V6.75z"/>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10.5l2 2 4-4"/>
@@ -745,7 +751,7 @@
 
     <!-- Facilities Section -->
     <section id="facilities" class="py-16 sm:py-24 lg:py-32 bg-gradient-to-br from-emerald-900 via-emerald-800 to-blue-900 relative overflow-hidden transition-all duration-1000">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 md:px-18 lg:px-0 relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16 max-w-2xl mx-auto">
               <span class="w-fit mx-auto px-4 py-1 rounded-full border border-emerald-300 bg-emerald-50 text-emerald-700 font-semibold text-xs tracking-wider mb-4 flex items-center justify-center gap-2">
@@ -766,7 +772,7 @@
               <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-white">
                 <span class="text-emerald-400">Modern</span> & Supportive Facilities
               </h2>
-              <p class="text-lg md:text-xl text-gray-200 max-w-xl mx-auto">
+              <p class="md:text-lg lg:text-xl text-gray-200 max-w-xl mx-auto">
                 Our campus is equipped with comfortable classrooms, a complete library, healthy cafeteria, and safe parking area to support every student's learning journey.
               </p>
             </div>
@@ -981,18 +987,28 @@
     <!-- Teacher Profiles Section -->
     <section id="teachers" class="py-20 bg-gray-50 md:px-10">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="mb-12 flex flex-col md:flex-row md:items-center md:justify-between" data-aos="fade-up">
+            <div class="mb-12 flex flex-col md:flex-row md:items-end md:justify-between" data-aos="fade-up">
                 <div>
-                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Experienced Teaching Team</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl">
+                  <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 w-fit rounded-full text-sm font-semibold mb-6">
+                    <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="6" cy="17" r="2" stroke-width="2"/>
+                      <circle cx="12" cy="7" r="3" stroke-width="2"/>
+                      <circle cx="18" cy="17" r="2" stroke-width="2"/>
+                      <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 19v-1a4 4 0 014-4h4a4 4 0 014 4v1"/>
+                      <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 10v2"/>
+                    </svg>
+                    Teaching Team
+                  </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Experienced <span class="text-emerald-600">Teaching</span> Team</h2>
+                    <p class="md:text-lg lg:text-xl text-gray-600 max-w-2xl">
                         Meet our dedicated and experienced teachers.
                         They are committed to guiding your child toward academic and personal success.
                     </p>
                 </div>
                 <!-- Swiper Navigation Arrows -->
                 <div class="flex gap-2 mt-6 md:mt-0">
-                    <button class="teacher-swiper-prev rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-                    <button class="teacher-swiper-next rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                    <button class="teacher-swiper-prev hover:scale-110 cursor-pointer rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                    <button class="teacher-swiper-next hover:scale-110 cursor-pointer rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
                 </div>
             </div>
             
@@ -1169,9 +1185,9 @@
 
     <!-- Program Offerings Section -->
     <section id="programs" class="py-20 bg-emerald-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 md:px-18 lg:px-0 max-w-6xl">
         <div class="text-start md:text-center mb-14 max-w-xl mx-auto">
-          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 w-fit rounded-full text-sm font-semibold mb-6">
             <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 0V4m0 16v-4"/>
             </svg>
@@ -1180,11 +1196,11 @@
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               Choose the Best Program for Your Child's <span class="text-emerald-600">Future</span>
             </h2>
-            <p class="text-lg text-gray-600">
+            <p class="md:text-lg lg:text-xl text-gray-600">
               Quality learning for every level—affordable, complete facilities, expert teachers, and engaging methods for your child's bright future.
             </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">
           <!-- Elementary Plan -->
           <div class="bg-white cursor-pointer rounded-2xl shadow-lg p-8 flex flex-col justify-between border border-emerald-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-emerald-300">
             <div>
@@ -1286,7 +1302,7 @@
     </section>
 
     <!-- Registration Process Section -->
-    <section id="registration" class="py-20 bg-gray-50">
+    <!-- <section id="registration" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="section-title">Mudah Bergabung dalam 3 Langkah</h2>
@@ -1321,7 +1337,6 @@
                 </div>
             </div>
             
-            <!-- Registration Form -->
             <div class="max-w-2xl mx-auto">
                 <div class="card p-8" data-aos="fade-up">
                     <h3 class="text-2xl font-bold text-center mb-6">Daftar Trial Gratis Sekarang</h3>
@@ -1381,99 +1396,81 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Temukan jawaban untuk pertanyaan umum tentang layanan kami
-                </p>
+        <div class="container mx-auto px-4 md:px-18 lg:px-0 max-w-6xl">
+          <div class="text-start md:text-center mb-14 max-w-xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-2 w-fit rounded-full text-sm font-semibold mb-6">
+              <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10a4 4 0 118 0c0 2-2 3-2 3v1m-2 4h.01" />
+                <circle cx="12" cy="19" r="1" />
+              </svg>
+              Frequently Asked Questions
             </div>
-            
-            <div class="max-w-3xl mx-auto">
-                <div class="space-y-4">
-                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
-                        <button class="accordion-button w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-                            <div class="flex justify-between items-center">
-                                <span class="font-semibold text-lg">Berapa biaya bimbingan belajar?</span>
-                                <svg class="w-6 h-6 text-gray-400 accordion-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="accordion-content bg-white border-l-4 border-primary rounded-b-lg">
-                            <div class="p-6">
-                                <p class="text-gray-600">Biaya bimbingan belajar dimulai dari Rp 300.000/bulan untuk paket reguler dengan diskon 50% untuk pendaftar bulan ini. Kami juga menyediakan paket intensif (Rp 450.000/bulan) dan premium (Rp 600.000/bulan) sesuai kebutuhan.</p>
-                            </div>
-                        </div>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Frequently Asked <span class="text-emerald-600">Questions</span>
+              </h2>
+              <p class="md:text-lg lg:text-xl text-gray-600">
+                Find answers to the most frequently asked questions about our services, fees, programs, and facilities. If you still have questions, don't hesitate to contact our team!
+              </p>
+          </div>
+            <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- FAQ Cards, all same base style, emerald highlight on hover -->
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">How much does tutoring cost?</span>
                     </div>
-                    
-                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-                        <button class="accordion-button w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-                            <div class="flex justify-between items-center">
-                                <span class="font-semibold text-lg">Apakah ada garansi hasil?</span>
-                                <svg class="w-6 h-6 text-gray-400 accordion-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="accordion-content bg-white border-l-4 border-primary rounded-b-lg">
-                            <div class="p-6">
-                                <p class="text-gray-600">Ya, kami memberikan garansi 100% uang kembali jika Anda tidak puas dengan layanan kami dalam 30 hari pertama. Selain itu, 95% siswa kami mengalami peningkatan nilai dalam 3 bulan pertama.</p>
-                            </div>
-                        </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Tutoring fees start from Rp 300,000/month for the regular package, with a 50% discount for this month's registrants. We also offer intensive packages (Rp 450,000/month) and premium packages (Rp 600,000/month) according to your needs.</p>
+                </div>
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">Is there a results guarantee?</span>
                     </div>
-                    
-                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
-                        <button class="accordion-button w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-                            <div class="flex justify-between items-center">
-                                <span class="font-semibold text-lg">Bagaimana sistem pembayaran?</span>
-                                <svg class="w-6 h-6 text-gray-400 accordion-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="accordion-content bg-white border-l-4 border-primary rounded-b-lg">
-                            <div class="p-6">
-                                <p class="text-gray-600">Pembayaran dilakukan bulanan dengan berbagai metode: transfer bank, e-wallet (OVO, GoPay, Dana), atau cash di kantor. Tersedia juga cicilan 0% untuk paket 6 bulan atau lebih.</p>
-                            </div>
-                        </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Yes, we offer a 100% money-back guarantee if you are not satisfied with our service within the first 30 days. In addition, 95% of our students see improved grades within the first 3 months.</p>
+                </div>
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">How does the payment system work?</span>
                     </div>
-                    
-                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
-                        <button class="accordion-button w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-                            <div class="flex justify-between items-center">
-                                <span class="font-semibold text-lg">Berapa lama durasi program?</span>
-                                <svg class="w-6 h-6 text-gray-400 accordion-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="accordion-content bg-white border-l-4 border-primary rounded-b-lg">
-                            <div class="p-6">
-                                <p class="text-gray-600">Durasi program fleksibel sesuai kebutuhan. Minimum 3 bulan untuk melihat peningkatan signifikan. Program intensif persiapan ujian biasanya 6-12 bulan, sedangkan program reguler dapat berkelanjutan sesuai keinginan.</p>
-                            </div>
-                        </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Payments are made monthly with various methods: bank transfer, e-wallet (OVO, GoPay, Dana), or cash at our office. 0% installment plans are available for packages of 6 months or more.</p>
+                </div>
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">How long is the program duration?</span>
                     </div>
-                    
-                    <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
-                        <button class="accordion-button w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-                            <div class="flex justify-between items-center">
-                                <span class="font-semibold text-lg">Bisakah jadwal kelas diubah?</span>
-                                <svg class="w-6 h-6 text-gray-400 accordion-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="accordion-content bg-white border-l-4 border-primary rounded-b-lg">
-                            <div class="p-6">
-                                <p class="text-gray-600">Tentu saja! Kami menyediakan fleksibilitas jadwal dengan pemberitahuan minimal 24 jam sebelumnya. Untuk paket premium, jadwal bisa disesuaikan setiap saat sesuai kebutuhan keluarga.</p>
-                            </div>
-                        </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Program duration is flexible according to your needs. A minimum of 3 months is recommended to see significant improvement. Intensive exam preparation programs usually last 6-12 months, while regular programs can be ongoing as desired.</p>
+                </div>
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">Can the class schedule be changed?</span>
                     </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Absolutely! We offer flexible scheduling with at least 24 hours' notice. For premium packages, schedules can be adjusted at any time to suit your family's needs.</p>
+                </div>
+                <div class="faq-card flex flex-col gap-4 bg-white rounded-2xl p-8 shadow hover:bg-emerald-500 hover:text-white border border-emerald-100 transition group">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 group-hover:bg-white/20 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+                        </span>
+                        <span class="font-bold text-lg group-hover:text-white transition">Are online and offline classes available?</span>
+                    </div>
+                    <p class="text-gray-600 font-medium group-hover:text-white/90 transition">Yes, we provide both online and offline (in-person) classes. You can choose the learning method that best suits your child's needs and your family's preferences.</p>
                 </div>
             </div>
         </div>
