@@ -910,75 +910,190 @@
     </section>
 
     <!-- Teacher Profiles Section -->
-    <section id="teachers" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="section-title">Tim Pengajar Berpengalaman</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Bertemu dengan para guru terbaik yang berdedikasi untuk kesuksesan anak Anda
-                </p>
+    <section id="teachers" class="py-20 bg-gray-50 md:px-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-12 flex flex-col md:flex-row md:items-center md:justify-between" data-aos="fade-up">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Experienced Teaching Team</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl">
+                        Meet our dedicated and experienced teachers.
+                        They are committed to guiding your child toward academic and personal success.
+                    </p>
+                </div>
+                <!-- Swiper Navigation Arrows -->
+                <div class="flex gap-2 mt-6 md:mt-0">
+                    <button class="teacher-swiper-prev rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                    <button class="teacher-swiper-next rounded-full p-2 bg-white text-gray-700 shadow-md hover:bg-gray-50 transition"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
             </div>
             
             <!-- Teacher Carousel -->
-            <div class="swiper teacher-swiper" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card p-6 text-center">
-                            <img src="https://images.pexels.com/photos/8923181/pexels-photo-8923181.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold mb-2">Dr. Sarah Johnson, M.Pd</h3>
-                            <p class="text-primary font-medium mb-2">Spesialis Matematika & Fisika</p>
-                            <p class="text-gray-600 mb-4">15 tahun pengalaman mengajar, lulusan ITB dengan gelar doktor pendidikan</p>
-                            <div class="flex justify-center space-x-2 mb-4">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">S3 Pendidikan</span>
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Sertifikat Guru</span>
+            <div class="swiper teacher-swiper mb-16" data-aos="fade-up">
+                <div class="swiper-wrapper items-stretch">
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-emerald-500 to-emerald-600 border border-emerald-200 shadow-emerald-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Dr. Sarah Johnson, M.Pd</h3>
+                                <p class="text-emerald-100 font-medium mb-2">Mathematics & Physics Specialist</p>
+                                <p class="text-emerald-50 mb-4 text-sm">15 years of teaching experience, ITB graduate with a doctorate in education</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">PhD in Education</span>
+                                    <span class="bg-emerald-400/30 text-white px-3 py-1 rounded-full text-xs">Certified Teacher</span>
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-500 italic">"Setiap anak memiliki potensi yang luar biasa, tugas kita adalah membantu mereka menemukannya"</p>
+                            <div class="mt-auto">
+                                <p class="text-sm text-emerald-50 italic text-center">"Every child has extraordinary potential, our job is to help them discover it"</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="swiper-slide">
-                        <div class="card p-6 text-center">
-                            <img src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold mb-2">Ahmad Rahman, S.Pd</h3>
-                            <p class="text-primary font-medium mb-2">Spesialis Bahasa Indonesia & Sejarah</p>
-                            <p class="text-gray-600 mb-4">12 tahun pengalaman, lulusan UNJ dengan track record mengantarkan siswa ke PTN</p>
-                            <div class="flex justify-center space-x-2 mb-4">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">S1 Pendidikan</span>
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Sertifikat Guru</span>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-blue-500 to-blue-600 border border-blue-200 shadow-blue-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/8460157/pexels-photo-8460157.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Ahmad Rahman, S.Pd</h3>
+                                <p class="text-blue-100 font-medium mb-2">Indonesian Language & History Specialist</p>
+                                <p class="text-blue-50 mb-4 text-sm">12 years of experience, UNJ graduate with a proven track record of guiding students to top universities</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Bachelor of Education</span>
+                                    <span class="bg-blue-400/30 text-white px-3 py-1 rounded-full text-xs">Certified Teacher</span>
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-500 italic">"Belajar adalah proses, bukan hasil. Mari kita nikmati prosesnya bersama"</p>
+                            <div class="mt-auto">
+                                <p class="text-sm text-blue-50 italic text-center">"Learning is a process, not a result. Let's enjoy the process together"</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="swiper-slide">
-                        <div class="card p-6 text-center">
-                            <img src="https://images.pexels.com/photos/8923653/pexels-photo-8923653.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold mb-2">Maria Sinta, M.Si</h3>
-                            <p class="text-primary font-medium mb-2">Spesialis Kimia & Biologi</p>
-                            <p class="text-gray-600 mb-4">10 tahun pengalaman, lulusan UI dengan spesialisasi pendidikan sains</p>
-                            <div class="flex justify-center space-x-2 mb-4">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">S2 Sains</span>
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Olimpiade Coach</span>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-purple-500 to-purple-600 border border-purple-200 shadow-purple-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/1181696/pexels-photo-1181696.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Maria Sinta, M.Si</h3>
+                                <p class="text-purple-100 font-medium mb-2">Chemistry & Biology Specialist</p>
+                                <p class="text-purple-50 mb-4 text-sm">10 years of experience, UI graduate specializing in science education</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Master of Science</span>
+                                    <span class="bg-purple-400/30 text-white px-3 py-1 rounded-full text-xs">Olympiad Coach</span>
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-500 italic">"Sains adalah petualangan, mari kita jelajahi bersama dengan rasa ingin tahu yang tinggi"</p>
+                            <div class="mt-auto">
+                                <p class="text-sm text-purple-50 italic text-center">"Science is an adventure, let's explore it together with great curiosity"</p>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="swiper-slide">
-                        <div class="card p-6 text-center">
-                            <img src="https://images.pexels.com/photos/8500513/pexels-photo-8500513.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                            <h3 class="text-xl font-semibold mb-2">David Wilson, M.Ed</h3>
-                            <p class="text-primary font-medium mb-2">Spesialis Bahasa Inggris & TOEFL</p>
-                            <p class="text-gray-600 mb-4">8 tahun pengalaman, native speaker dengan sertifikasi internasional</p>
-                            <div class="flex justify-center space-x-2 mb-4">
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Master Education</span>
-                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">TESOL Certified</span>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-amber-500 to-amber-600 border border-amber-200 shadow-amber-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">David Wilson, M.Ed</h3>
+                                <p class="text-amber-100 font-medium mb-2">English & TOEFL Specialist</p>
+                                <p class="text-amber-50 mb-4 text-sm">8 years of experience, native speaker with international certification</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Master of Education</span>
+                                    <span class="bg-amber-400/30 text-white px-3 py-1 rounded-full text-xs">TESOL Certified</span>
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-500 italic">"Language is the bridge to the world. Let's build that bridge together"</p>
+                            <div class="mt-auto">
+                                <p class="text-sm text-amber-50 italic text-center">"Language is the bridge to the world. Let's build that bridge together"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Teacher 1 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-pink-500 to-pink-600 border border-pink-200 shadow-pink-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Lina Hartati, S.Pd</h3>
+                                <p class="text-pink-100 font-medium mb-2">Bahasa Inggris & Literature Specialist</p>
+                                <p class="text-pink-50 mb-4 text-sm">7 years of experience, UGM graduate, passionate about creative writing and literature</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Bachelor of Education</span>
+                                    <span class="bg-pink-400/30 text-white px-3 py-1 rounded-full text-xs">Literature Enthusiast</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <p class="text-sm text-pink-50 italic text-center">"Reading opens new worlds, let's explore them together"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Teacher 2 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-green-700 to-green-500 border border-green-200 shadow-green-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Budi Santoso, M.Kom</h3>
+                                <p class="text-green-100 font-medium mb-2">Computer Science & Coding Specialist</p>
+                                <p class="text-green-50 mb-4 text-sm">9 years of experience, ITS graduate, expert in programming and robotics</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Computer Science</span>
+                                    <span class="bg-green-400/30 text-white px-3 py-1 rounded-full text-xs">Robotics Mentor</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <p class="text-sm text-green-50 italic text-center">"Technology is the future, let's build it together"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Teacher 3 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-cyan-500 to-cyan-600 border border-cyan-200 shadow-cyan-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Rina Kusuma, S.Psi</h3>
+                                <p class="text-cyan-100 font-medium mb-2">Psychology & Counseling Specialist</p>
+                                <p class="text-cyan-50 mb-4 text-sm">6 years of experience, Unair graduate, dedicated to student well-being and motivation</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Bachelor of Psychology</span>
+                                    <span class="bg-cyan-400/30 text-white px-3 py-1 rounded-full text-xs">Student Counselor</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <p class="text-sm text-cyan-50 italic text-center">"A happy mind learns best. Let's grow together!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Teacher 4 -->
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-lg p-6 flex flex-col justify-between shadow-lg w-full max-w-md bg-gradient-to-br from-red-500 to-red-600 border border-red-200 shadow-red-100">
+                            <div class="text-center">
+                                <img src="https://images.pexels.com/photos/1130624/pexels-photo-1130624.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Teacher" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Agus Pratama, S.Sn</h3>
+                                <p class="text-red-100 font-medium mb-2">Art & Music Specialist</p>
+                                <p class="text-red-50 mb-4 text-sm">11 years of experience, ISI Yogyakarta graduate, inspiring creativity through art and music</p>
+                                <div class="flex justify-center space-x-2 mb-4">
+                                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Bachelor of Arts</span>
+                                    <span class="bg-red-400/30 text-white px-3 py-1 rounded-full text-xs">Music Instructor</span>
+                                </div>
+                            </div>
+                            <div class="mt-auto">
+                                <p class="text-sm text-red-50 italic text-center">"Art is the language of the soul. Let's express ourselves!"</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination mt-8"></div>
+            </div>
+            
+            <!-- Teacher Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-emerald-600"><span id="yoe-count">0</span>+</div>
+                    <div class="mt-2 text-gray-600">Years of Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-emerald-600"><span id="certified-count">0</span>+</div>
+                    <div class="mt-2 text-gray-600">Certified Teachers</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-emerald-600"><span id="graduation-count">0</span>%</div>
+                    <div class="mt-2 text-gray-600">Graduation Rate</div>
+                </div>
             </div>
         </div>
     </section>

@@ -81,31 +81,38 @@ new Swiper('.testimonial-swiper', {
   teachers.start();
   facilities.start();
 
+  const yoe = new CountUp('yoe-count', 52, {duration: 4,  enableScrollSpy: true});
+  const certif = new CountUp('certified-count', 124, {duration: 3,  enableScrollSpy: true});
+  const graduation = new CountUp('graduation-count', 98, {duration: 3,  enableScrollSpy: true});
+  yoe.start();
+  certif.start();
+  graduation.start();
+
 // Swiper for teachers
 const teacherSwiper = new Swiper('.teacher-swiper', {
-    loop: true,
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 32,
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    navigation: {
+      nextEl: '.teacher-swiper-next',
+      prevEl: '.teacher-swiper-prev',
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
-});
+  });
 
 // GLightbox for image gallery
 const lightbox = GLightbox({
