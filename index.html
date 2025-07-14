@@ -87,75 +87,46 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex flex-col justify-center bg-[#f8fafc] overflow-hidden py-16">
-      <!-- Floating Circles -->
-      <div class="absolute top-10 left-10 w-32 h-32 bg-emerald-100 rounded-full opacity-60 z-0"></div>
-      <div class="absolute bottom-20 right-20 w-24 h-24 bg-cyan-100 rounded-full opacity-50 z-0"></div>
-      <div class="absolute top-1/2 right-0 w-16 h-16 bg-amber-100 rounded-full opacity-40 z-0"></div>
-      <div class="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 px-6 py-12 md:py-24">
-        <!-- Left: Modern Text Content -->
-        <div class="flex-1 flex flex-col items-start justify-center space-y-7">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="inline-flex items-center px-3 py-1 bg-emerald-100 text-emerald-600 font-semibold rounded-full text-sm shadow-sm">
-              <svg class="w-4 h-4 mr-1 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                <path stroke-width="2" d="M8 12l2 2 4-4"></path>
-              </svg>
-              #1 Pilihan Orang Tua
-            </span>
-          </div>
-          <h1 class="text-4xl md:text-6xl font-black text-gray-900 leading-tight tracking-tight">
-            <span class="block">
-              <span class="bg-gradient-to-r from-emerald-500 via-cyan-400 to-amber-400 bg-clip-text text-transparent">
-                Cerdas Academy
-              </span>
-            </span>
-            <span class="block mt-2">
-              <span class="relative inline-block">
-                <span class="text-emerald-600">Belajar Seru,</span>
-                <svg class="absolute left-0 -bottom-2 w-full h-4" viewBox="0 0 220 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12c60-10 140-10 212 0" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
+    <section class="w-full bg-[#fcfbf7] pt-28 md:pt-0 flex justify-center min-h-dvh">
+      <div class="w-full flex flex-col md:flex-row items-center md:items-center gap-12 px-6 relative">
+        <!-- Left: Text Content -->
+        <div class="ml-5 md:ml-10 lg:ml-20 xl:ml-32 flex-1 flex flex-col items-start justify-center relative z-10">
+          <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+            Get world class <br />
+            courses from world <br />
+            class mentors
+          </h1>
+          <p class="text-lg text-gray-500 mb-10 max-w-md">
+            Get quality courses with us with the best price. Now you can get the best course from us. We have top mentors around the globe.
+          </p>
+          <div class="flex items-center gap-4">
+            <a href="#get-started" class="bg-gray-900 text-white font-semibold px-8 py-4 rounded-lg shadow hover:bg-gray-800 transition">Get Started</a>
+            <a href="#how-it-works" class="flex items-center gap-2 border-2 border-gray-900 text-gray-900 font-semibold px-6 py-4 rounded-lg hover:bg-gray-100 transition">
+              <span class="w-6 h-6 flex items-center justify-center border-2 border-gray-900 rounded-full">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <polygon points="9,7 16,12 9,17" fill="currentColor"/>
                 </svg>
               </span>
-              <span class="ml-2 text-cyan-600">Prestasi Hebat</span>
-            </span>
-          </h1>
-          <p class="text-base md:text-xl text-gray-600 max-w-lg">
-            Bimbel modern dengan pendekatan kreatif, mentor inspiratif, dan suasana belajar yang menyenangkan. Jadikan anak Anda percaya diri dan berprestasi!
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 w-full mt-2">
-            <a href="#contact" class="btn-primary w-full sm:w-auto text-lg py-3 px-8 rounded-full shadow-lg">
-              Coba Gratis
-            </a>
-            <a href="#programs" class="btn-secondary w-full sm:w-auto text-lg py-3 px-8 rounded-full">
-              Lihat Program
+              How it works?
             </a>
           </div>
         </div>
-        <!-- Right: Clean, Playful Visual with Framed Photo and Floating Elements -->
-        <div class="flex-1 flex justify-center items-center relative min-h-[340px]">
-          <!-- Floating circle top left -->
-          <div class="absolute -top-8 -left-8 w-20 h-20 bg-emerald-100 rounded-full opacity-40 z-0 animate-pulse"></div>
-          <!-- Main photo in a modern frame -->
-          <div class="relative z-10 w-64 h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white flex items-center justify-center">
-            <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Siswa Cerdas Academy" class="w-full h-full object-cover">
-            <span class="absolute top-4 left-4 bg-amber-400 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-              Siswa Aktif
-            </span>
+        <!-- Right: Image and Stat Badges -->
+        <div class="flex-1 flex justify-center items-center relative md:absolute md:right-0 md:w-1/2">
+          <div class="relative w-[400px] h-[420px] md:w-full md:h-dvh rounded-3xl md:rounded-none overflow-hidden shadow-2xl bg-white flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Mentors" class="w-full h-full object-cover object-center" />
+            <!-- Stat Badge 1: Top Left, inside image -->
+            <div class="absolute top-6 left-6 bg-purple-200 text-purple-900 font-bold px-6 py-4 rounded-2xl shadow-lg text-center flex flex-col items-center" style="min-width: 110px;">
+              <div class="text-xl md:text-2xl">110K</div>
+              <div class="text-xs font-medium">Active Students</div>
+            </div>
+            <!-- Stat Badge 2: Bottom Left, inside image -->
+            <div class="absolute bottom-6 left-6 bg-yellow-200 text-yellow-900 font-bold px-6 py-4 rounded-2xl shadow-lg text-center flex flex-col items-center" style="min-width: 110px;">
+              <div class="text-xl md:text-2xl">100+</div>
+              <div class="text-xs font-medium">Top Class Mentors</div>
+            </div>
           </div>
-          <!-- Overlapping playful card -->
-          <div class="absolute -right-8 bottom-8 w-36 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-cyan-200 bg-white z-20 rotate-6 flex items-center justify-center">
-            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80" alt="Mentor Cerdas Academy" class="w-full h-full object-cover">
-          </div>
-          <!-- Floating circle bottom right -->
-          <div class="absolute -bottom-6 right-0 w-14 h-14 bg-amber-100 rounded-full opacity-30 z-0"></div>
         </div>
-      </div>
-      <!-- Playful Stat Badges -->
-      <div class="relative z-20 flex flex-col md:flex-row gap-6 md:gap-12 justify-center items-center w-full max-w-4xl mx-auto">
-        <div class="flex items-center gap-2 bg-emerald-100 text-emerald-700 font-bold px-6 py-3 rounded-full shadow-md text-lg float-animation">🎓 10.000+ Siswa Sukses</div>
-        <div class="flex items-center gap-2 bg-cyan-100 text-cyan-700 font-bold px-6 py-3 rounded-full shadow-md text-lg float-animation">⭐ 99% Kepuasan</div>
-        <div class="flex items-center gap-2 bg-amber-100 text-amber-700 font-bold px-6 py-3 rounded-full shadow-md text-lg float-animation">👩‍🏫 15+ Tahun Pengalaman</div>
       </div>
     </section>
 
@@ -1472,7 +1443,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="relative min-h-screen flex items-center justify-center py-20 px-4 bg-[url('https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=compress&fit=crop&w=1200&q=80')] bg-cover bg-center bg-fixed">
+    <section id="contact" class="relative min-h-screen flex items-center justify-center py-20 px-4 bg-[url('https://images.unsplash.com/photo-1513258496099-4809596d5290?auto=compress&fit=crop&w=1200&q=80')] bg-cover bg-center bg-fixed">
       <!-- Overlay with palette color -->
       <div class="absolute inset-0 bg-emerald-900/70 pointer-events-none"></div>
       <div class="relative z-10 flex flex-col items-center w-full">
