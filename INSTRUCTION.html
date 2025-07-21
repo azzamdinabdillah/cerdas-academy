@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup & Modification Instructions - Cerdas Academy Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f0fdf4 0%, #e0e7ef 100%);
+      font-family: 'Inter', Arial, sans-serif;
+      color: #222;
+    }
+    .header-bar {
+      width: 100%;
+      background: #10b981;
+      color: #fff;
+      padding: 24px 0 18px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 12px #0001;
+      margin-bottom: 32px;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px #0002;
+      padding: 40px 28px 32px 28px;
+      position: relative;
+    }
+    h1 {
+      font-size: 1.7rem;
+      color: #059669;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      color: #059669;
+      font-size: 1.2rem;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      border-left: 4px solid #10b981;
+      padding-left: 12px;
+      background: #f0fdf4;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    h3 {
+      color: #059669;
+      font-size: 1.05rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    ol, ul {
+      margin-left: 1.5em;
+      margin-bottom: 0.7em;
+    }
+    code, pre {
+      background: #f1f5f9;
+      color: #0f172a;
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 0.98em;
+    }
+    pre {
+      display: inline-block;
+      margin: 8px 0;
+    }
+    .faq, .troubleshoot, .important {
+      margin: 28px 0;
+      padding: 18px 18px 14px 18px;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .faq {
+      background: #f0fdf4;
+      border-left: 5px solid #10b981;
+    }
+    .troubleshoot {
+      background: #fef9c3;
+      border-left: 5px solid #f59e0b;
+    }
+    .important {
+      background: #fee2e2;
+      border-left: 5px solid #ef4444;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #059669;
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      margin-top: 48px;
+      font-size: 0.98rem;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 18px 6vw 18px 6vw;
+      }
+      .header-bar {
+        font-size: 1.2rem;
+        padding: 16px 0 12px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-bar">Cerdas Academy Website Setup Guide</div>
+  <div class="container">
+    <h1>Setup, Installation & Modification Guide</h1>
+    <p style="text-align:center; color:#666; margin-bottom:32px;">For beginners and non-technical users who want to use, edit, or resell this website.</p>
+
+    <h2>1. Initial Preparation</h2>
+    <ol>
+      <li><b>Make sure you have <a href="https://nodejs.org/" target="_blank">Node.js</a> installed (version 16 or above).</b><br>If not, download and install it from the official Node.js website.</li>
+      <li><b>Extract or copy the <code>project</code> folder to your computer.</b></li>
+      <li><b>Open the <code>project</code> folder using <i>Terminal</i> or <i>Command Prompt</i>:</b><br>
+        <ul>
+          <li>On Windows: Right-click inside the folder, choose <b>Open in Terminal</b> or <b>Open Command Prompt</b>.</li>
+          <li>On Mac/Linux: Open Terminal, then use the <code>cd</code> command to go to the <code>project</code> folder.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>2. How to Install & Run the Website</h2>
+    <ol>
+      <li><b>Install all website dependencies:</b><br>
+        Type the following command in the terminal:
+        <pre>npm install</pre>
+        <span style="color:#888; font-size:0.97em;">Wait until the process is finished (requires internet connection).</span>
+      </li>
+      <li><b>Run the website in development mode (edit & see changes live):</b><br>
+        <pre>npm run dev</pre>
+        <span style="color:#888; font-size:0.97em;">After an address appears (usually <code>http://localhost:5173</code>), open it in your browser.</span>
+      </li>
+      <li><b>To create a production/ready-to-upload version:</b><br>
+        <pre>npm run build</pre>
+        <span style="color:#888; font-size:0.97em;">The build result will appear in the <code>dist</code> folder. Upload the contents of <code>dist</code> to your hosting.</span>
+      </li>
+    </ol>
+
+    <h2>3. Folder Structure & Important Files</h2>
+    <ul>
+      <li><b><code>index.html</code></b>: The main page of the website. Edit this file to change the main content/layout.</li>
+      <li><b><code>style.css</code></b>: File for website appearance (colors, fonts, layout). You can edit colors, fonts, etc.</li>
+      <li><b><code>main.js</code></b>: Main script for animations, sliders, statistics, etc.</li>
+      <li><b><code>public/</code></b>: Place your image assets here. Use this folder for all images used on the website.</li>
+      <li><b><code>vite.config.js</code></b>: Build/dev server configuration. <i>Usually you don't need to change this.</i></li>
+      <li><b><code>package.json</code></b>: List of libraries used. <i>Usually you don't need to change this.</i></li>
+    </ul>
+
+    <h2>4. How to Modify Website Content</h2>
+    <ol>
+      <li><b>Edit Text/Content:</b><br>
+        Edit the <code>index.html</code> file using Notepad, VSCode, or any text editor. Find the section you want to change (e.g. title, description, testimonials, etc).</li>
+      <li><b>Change Images:</b><br>
+        Save your new images in the <code>public/</code> folder, then update the image links in <code>index.html</code> to point to your new images.</li>
+      <li><b>Change Colors/Fonts:</b><br>
+        Edit <code>style.css</code> (e.g. in the <code>:root</code> or <code>@theme</code> section), or use Tailwind classes in <code>index.html</code>.</li>
+      <li><b>Edit Animations/Sliders:</b><br>
+        Edit <code>main.js</code> to change animations, sliders, or statistics.</li>
+      <li><b>Change Contact/WhatsApp Number:</b><br>
+        Find and replace the WhatsApp number in <code>index.html</code> (for the "Contact Us" button).</li>
+    </ol>
+
+    <h2>5. Uploading to Hosting/Online</h2>
+    <ol>
+      <li>Run <b>build</b> with the command <code>npm run build</code>.</li>
+      <li>Upload all contents of the <code>dist</code> folder to your hosting (can be cPanel, Plesk, or other hosting services).</li>
+      <li>If your hosting supports <b>Node.js</b>, you can also upload the entire <code>project</code> folder and run <code>npm install</code> & <code>npm run build</code> on the server.</li>
+    </ol>
+
+    <h2>6. Troubleshooting (Common Issues & Solutions)</h2>
+    <div class="troubleshoot">
+      <b>Q: <code>npm install</code> command gives an error?</b><br>
+      <b>A:</b> Make sure Node.js is installed. If you still get errors, try updating Node.js to the latest version.<br><br>
+      <b>Q: Website does not appear in the browser?</b><br>
+      <b>A:</b> Make sure you have run <code>npm run dev</code> and open the address shown in the terminal (e.g. <code>http://localhost:5173</code>).
+    </div>
+
+    <h2>7. FAQ (Frequently Asked Questions)</h2>
+    <div class="faq">
+      <b>Q: Can I upload this website to regular/shared hosting?</b><br>
+      <b>A:</b> Yes, as long as you upload the <code>npm run build</code> result (the contents of the <code>dist</code> folder), not the entire project folder.<br><br>
+      <b>Q: Can I change colors, fonts, or images?</b><br>
+      <b>A:</b> Absolutely! Edit <code>style.css</code> for colors/fonts, and put your images in the <code>public/</code> folder.<br><br>
+      <b>Q: Can I add new pages?</b><br>
+      <b>A:</b> Yes, copy <code>index.html</code>, edit as needed, and add a link to your new page.
+    </div>
+
+    <h2>8. Support Contact</h2>
+    <p>If you are still confused, please contact the seller or developer of this website for further assistance.</p>
+
+    <div class="important">
+      <b>Important Notes:</b><br>
+      - Do not delete <code>package.json</code>, <code>vite.config.js</code>, or the <code>node_modules</code> folder.<br>
+      - If you want to reset, delete the <code>node_modules</code> folder and run <code>npm install</code> again.<br>
+      - For security, change all contact data before reselling.
+    </div>
+
+    <div class="footer">&copy; 2024 Cerdas Academy. All rights reserved.</div>
+  </div>
+</body>
+</html> 
